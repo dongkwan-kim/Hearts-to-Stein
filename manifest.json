@@ -1,0 +1,24 @@
+{
+  "name": "Give Hearts to Stein",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Give Hearts to Stein",
+  "homepage_url": "https://twitter.com",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "https://twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
